@@ -1,0 +1,40 @@
+\begin{savenotes}\sphinxattablestart
+<% if table.align -%>
+  <%- if table.align in ('center', 'default') -%>
+  \centering
+  <%- elif table.align == 'left' -%>
+  \raggedright
+  <%- else -%>
+  \raggedleft
+  <%- endif %>
+<%- else -%>
+  \centering
+<%- endif %>
+<% if table.caption -%>
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{<%= ''.join(table.caption) %>}<%= labels %>
+\sphinxaftertopcaption
+<% elif labels -%>
+\phantomsection<%= labels %>\nobreak
+<% endif -%>
+%%
+%% BOOKTABS PATCH
+%% we remove the '|' characters from the colspec to remove vertical borders
+\begin{tabulary}{\linewidth}[t]<%= table.get_colspec().replace('|', '') -%>
+\toprule
+%%
+%% BOOKTABS PATCH
+%% we replace '\hline' with '\toprule' at the bottom of the header
+<%= ''.join(table.header).replace('\\hline','\\toprule') %>
+%%
+%% BOOKTABS PATCH
+%% we replace '\hline' with '\addlinespace' for each row, also
+%% we cut off the last 13 chars here because this is exactly the length
+%% of '\addlinespace', which we want to remove at the bottom
+<%=- ''.join(table.body).replace('\\hline','\\addlinespace')[:-13] %>
+\bottomrule
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
