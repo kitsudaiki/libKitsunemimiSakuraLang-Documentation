@@ -8,6 +8,8 @@ A tool for automating processes has its own requirements and limitations and so 
 
 **Simple example**
 
+This syntax-example comes for the SakuraTree repo (https://github.com/kitsudaiki/SakuraTree), which use the library too.
+
 ::
 
     ["test example file"]
@@ -44,11 +46,6 @@ A tool for automating processes has its own requirements and limitations and so 
         - first_try = test_output
     }
 
-
-
-**Restrictions**
-
-In this version 0.2.0 only single files can be executed by the tool. The functionality that files can call other files is expected to be added in version 0.3.0.
 
 
 .. raw:: latex
