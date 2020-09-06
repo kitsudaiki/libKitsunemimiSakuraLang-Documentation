@@ -7,7 +7,7 @@ Documentation for the library libKitsunemimiSakuraLang (https://github.com/kitsu
 
 Documentation for latest master-version: 
 
-https://gitlab.com/kitsudaiki/libKitsunemimiSakuraLang/builds/artifacts/master/browse?job=build
+https://gitlab.com/kitsudaiki/libKitsunemimiSakuraLang-Documentation/builds/artifacts/master/browse?job=build
 
 ## Build 
 
