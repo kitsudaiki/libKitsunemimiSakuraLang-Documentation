@@ -11,6 +11,5 @@ Welcome to libKitsunemimiSakuraLang's documentation!
 
 
    introduction
-   build
    syntax
    sections
