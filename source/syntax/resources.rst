@@ -11,10 +11,10 @@ The resource can be called by a normal blosom-call:
 
 ::
 
-	<RESOURCE_NAME>("some text for output")
-	- <VAR1_IN> = <VAR>
-	- <VAR2_OUT> >> <VAR>
-	- ...
+    <RESOURCE_NAME>("some text for output")
+    - <VAR1_IN> = <VAR>
+    - <VAR2_OUT> >> <VAR>
+    - ...
 
 The *<RESOURCE_NAME>* is the name of the tree at the beginning of the sakura-file. Thats the reason, why this name doesn't allow whitespaces.
 
@@ -24,44 +24,44 @@ File structure
 
 ::
 
-	.
-	├── resources
-	│   └── test-resource.sakura
-	│
-	└── root.sakura
+    .
+    ├── resources
+    │   └── test-resource.sakura
+    │
+    └── root.sakura
 
 
 Content of `root.sakura`
 
 ::
 
-	["resource-subtree-test"]
-	- test_text = "this is a test"
-	- output_resource = ""
+    ["resource-subtree-test"]
+    - test_text = "this is a test"
+    - output_resource = ""
 
-	test_resource("call test-ressource")
-	- test_text = test_text
-	- new_text >> output_resource
+    test_resource("call test-ressource")
+    - test_text = test_text
+    - new_text >> output_resource
 
 
 Content of `test-resource.sakura`
 
 ::
 
-	["test_resource"]
-	- test_text = "{{}}"
-	- new_text = ""
+    ["test_resource"]
+    - test_text = "{{}}"
+    - new_text = ""
 
-	text_file("write into a text-file")
-	- file_path = "/tmp/ressource-subtree-test"
-	-> write:
-	    - text = test_text
-	-> read:
-	    - text >> test_text
+    text_file("write into a text-file")
+    - file_path = "/tmp/ressource-subtree-test"
+    -> write:
+        - text = test_text
+    -> read:
+        - text >> test_text
 
 
-	item_update("change output for better test")
-	- new_text = "asdf: {{test_text}}"
+    item_update("change output for better test")
+    - new_text = "asdf: {{test_text}}"
 
 
 
