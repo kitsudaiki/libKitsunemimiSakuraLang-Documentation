@@ -230,3 +230,12 @@ The following three types are supported:
         (the item "package_string" now has the content: " nano  vim " as single string)
 
 
+Strings can also be split over multiple lines, to make them better readable:
+
+**Example**
+
+    ::
+
+        - text = "this is only "
+                 "a simple "
+                 "example"
