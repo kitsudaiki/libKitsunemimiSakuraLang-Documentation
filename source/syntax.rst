@@ -36,7 +36,6 @@ This syntax-example comes for the SakuraTree repo (https://github.com/kitsudaiki
         - file_path = path
         - group = "DEFAULT"
         - entry = "asdf"
-
         -> read:
             - blossom_output >> test_output
         -> set:
