@@ -85,3 +85,62 @@ The *<ITEM_NAME>* can be arbitrary. It has the type the value of the current pos
 
     \newpage
     
+
+post aggreation
+~~~~~~~~~~~~~~~
+
+Sometime it is necessary to get information out of the loop. To make this possible in the case of a parallel executed loop without race-contition, there was the feature of a post-aggregation added. This make it possible to collect data from the loop at the end. The result is an object, where each entry contains the value of another cycle. This way, its is possible to collect the data and process them after the loop.
+
+**General syntax:**
+
+The post-aggregation has to be defined directly after the *parallel_for*.
+
+::
+    - <OUTPUT_ARRAY> = []
+
+    parallel_for(<ITEM> : <ITEM_LIST>)
+    - <OUTPUT_ARRAY> = <OUTPUT_ARRAY>.<OPERATION>(<SOME_ITEM>)   # <- post-aggregation
+    {
+        ...
+    }
+
+*<OPERATION>* can be *append* or *insert*. It also works for both types of *parallel_for*.
+
+
+**Example**
+
+::
+    - input = ["asdf", "xyz", "poi"]
+    - result = []
+    - tempValue = ""
+
+    parallel_for(value : input)
+    - result = result.append(tempValue)
+    {
+        item_update("update value")
+        - tempValue = ">{{value}}<"
+    }
+
+    print("print result")
+    - output = result
+
+
+Result of this example is:
+
+::
+
+    +-----------+---------------+
+    | Item-Name | Value         |
+    +===========+===============+
+    | output    | [             |
+    |           |     ">asdf<", |
+    |           |     ">xyz<",  |
+    |           |     ">poi<"   |
+    |           | ]             |
+    +-----------+---------------+
+
+
+.. raw:: latex
+
+    \newpage
+    

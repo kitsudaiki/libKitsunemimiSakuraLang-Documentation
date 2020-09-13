@@ -36,7 +36,6 @@ This syntax-example comes for the SakuraTree repo (https://github.com/kitsudaiki
         - file_path = path
         - group = "DEFAULT"
         - entry = "asdf"
-
         -> read:
             - blossom_output >> test_output
         -> set:
@@ -58,4 +57,6 @@ This syntax-example comes for the SakuraTree repo (https://github.com/kitsudaiki
 .. include:: syntax/blossoms-and-blossom-groups.rst
 .. include:: syntax/file-structure.rst
 .. include:: syntax/directory-structure.rst
+.. include:: syntax/subtrees.rst
+.. include:: syntax/resources.rst
 .. include:: syntax/functions.rst

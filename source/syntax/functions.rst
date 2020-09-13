@@ -415,8 +415,48 @@ Check if an item contains another specific item.
       - result if the string contains a substring, which match the argument string
 
 
+``clear_empty``
+^^^^^^^^^^^^^^^
+
+Remove empty entries from an array-item.
+
+**Example**:
+
+::
+
+    - input = ["", "asdf", "", "xyz"]
+    - cleared_output = []
+
+    item_update("remove empty entries")
+    - cleared_output = input.clear_empty()
+
+    # after this `cleared_output` contains ["asdf", xyz"] 
+
+
+**Arguments**:
+
+    no arguments
+
+**Output Type**:
+
+    array-item with no empty entries
+
+**Input Item**:
+
+.. tabularcolumns:: |m{0.27\textwidth}|m{0.66\textwidth}|
+
+.. list-table::
+    :header-rows: 1
+
+    * - **Item type**
+      - **Output Content**
+
+    * - array-item
+      - cleared array
+
+
 ``parse_json``
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 Parse a json-formated for easies access to the content
 
@@ -450,7 +490,7 @@ Parse a json-formated for easies access to the content
       - **Output Content**
 
     * - string-item
-      - json-formated string
+      - json-formated object
 
 
 .. raw:: latex
