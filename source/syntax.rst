@@ -58,4 +58,6 @@ This syntax-example comes for the SakuraTree repo (https://github.com/kitsudaiki
 .. include:: syntax/blossoms-and-blossom-groups.rst
 .. include:: syntax/file-structure.rst
 .. include:: syntax/directory-structure.rst
+.. include:: syntax/subtrees.rst
+.. include:: syntax/resources.rst
 .. include:: syntax/functions.rst
