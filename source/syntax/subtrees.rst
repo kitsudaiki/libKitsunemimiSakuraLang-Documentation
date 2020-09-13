@@ -39,7 +39,7 @@ Content of `root.sakura`
 
     subtree("next/subtree.sakura")
     - test_text = test_text
-    - new_text >> output_subtree
+    - new_text >> output_subtree    # write new_text item back
 
 
 Content of `test-resource.sakura`

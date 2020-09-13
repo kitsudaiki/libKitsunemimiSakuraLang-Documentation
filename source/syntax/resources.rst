@@ -41,7 +41,7 @@ Content of `root.sakura`
 
     test_resource("call test-ressource")
     - test_text = test_text
-    - new_text >> output_resource
+    - new_text >> output_resource    # write new_text item back
 
 
 Content of `test-resource.sakura`

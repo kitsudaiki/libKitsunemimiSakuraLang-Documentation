@@ -15,7 +15,7 @@ Because the tool *SakuraTree* is a reference for trees with cherry blossoms, the
     - group = "DEFAULT"
     - entry = "asdf"
     -> read:
-        - blossom_output >> test_output
+        - value >> test_output
     -> set:
         - value = test_input
 
@@ -90,7 +90,7 @@ The whole construct has up to 5 different parts:
 
     ::
 
-        - blossom_output >> <ITEM>
+        - <OUTPUT_VALUE> >> <ITEM>
 
     Some blossoms provide an output. See the blossom definitions to see if the blossom has an output. If there is output, it can be written back into an item, which already exists in the items declaration at the beginning of the file. This way the content of the output can be used by another blossom.
 
@@ -98,7 +98,7 @@ The whole construct has up to 5 different parts:
 
     ::
 
-        - blossom_output >> test_output
+        - value >> test_output
 
 
 
