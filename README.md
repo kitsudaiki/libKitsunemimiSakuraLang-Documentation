@@ -13,6 +13,11 @@ Documentation for latest master-version:
 
 https://gitlab.com/kitsudaiki/libKitsunemimiSakuraLang-Documentation/builds/artifacts/master/browse?job=build
 
+For libKitsunemimiSakuraLang version 0.5.0:
+
+https://files.kitsunemimi.moe/docs/libKitsunemimiSakuraLang-Documentation_0_5_0.pdf
+
+
 ## Build 
 
 Build latex-document:
