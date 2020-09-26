@@ -96,6 +96,7 @@ Sometime it is necessary to get information out of the loop. To make this possib
 The post-aggregation has to be defined directly after the *parallel_for*.
 
 ::
+
     - <OUTPUT_ARRAY> = []
 
     parallel_for(<ITEM> : <ITEM_LIST>)
@@ -110,6 +111,7 @@ The post-aggregation has to be defined directly after the *parallel_for*.
 **Example**
 
 ::
+
     - input = ["asdf", "xyz", "poi"]
     - result = []
     - tempValue = ""
