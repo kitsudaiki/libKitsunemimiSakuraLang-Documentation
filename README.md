@@ -13,9 +13,9 @@ Documentation for latest master-version:
 
 https://gitlab.com/kitsudaiki/libKitsunemimiSakuraLang-Documentation/builds/artifacts/master/browse?job=build
 
-For libKitsunemimiSakuraLang version 0.5.1:
+For libKitsunemimiSakuraLang version 0.6.0:
 
-https://files.kitsunemimi.moe/docs/libKitsunemimiSakuraLang-Documentation_0_5_1.pdf
+https://files.kitsunemimi.moe/docs/libKitsunemimiSakuraLang-Documentation_0_6.0.pdf
 
 
 ## Build 
