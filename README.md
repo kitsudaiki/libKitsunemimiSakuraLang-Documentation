@@ -15,7 +15,7 @@ https://gitlab.com/kitsudaiki/libKitsunemimiSakuraLang-Documentation/builds/arti
 
 For libKitsunemimiSakuraLang version 0.6.0:
 
-https://files.kitsunemimi.moe/docs/libKitsunemimiSakuraLang-Documentation_0_6_.pdf
+https://files.kitsunemimi.moe/docs/libKitsunemimiSakuraLang-Documentation_0_6_0.pdf
 
 
 ## Build 
