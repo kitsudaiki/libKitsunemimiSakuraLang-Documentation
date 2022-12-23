@@ -1,5 +1,6 @@
-# libKitsunemimiSakuraLang-Documentation
+# libKitsunemimiSakuraLang-Documentation (DEPRECATED)
 
+**IMPORTANT: This repository is no longer maintained** 
 
 Documentation for the library `libKitsunemimiSakuraLang` (https://github.com/kitsudaiki/libKitsunemimiSakuraLang) 
 
